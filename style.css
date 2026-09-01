@@ -140,6 +140,7 @@ text-align:center;
 /*start Secure your Spot (Pricing) Section */
 
 .pricing-section{
+    
     text-align: center;
     margin-top: 30px;
     width: min(1200px, 90%);
@@ -257,12 +258,10 @@ text-align:center;
 /* start Hackathon challenge Section */
 
 .hackathon{
-    width: min(1100px, 90%);
+    width: min(1100px, 86%);
     margin: 80px auto;
-/* 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
-    gap: 50px; */
+
+    
     display:flex;
     gap:50px;
 
@@ -273,6 +272,9 @@ text-align:center;
     border-radius: 20px;
 }
 /*LEFT SIDE*/
+.hackathon-text{
+    width:50%;
+}
 .hackathon span{
     color: #b84cff;
     font-weight: bold;
@@ -358,6 +360,7 @@ text-align:center;
 /*RIGHT SIDE*/
 .hackathon-image{
     position: relative;
+    width: 50%;
 }
 
 .hackathon-image img{
@@ -402,8 +405,59 @@ text-align:center;
 /* end Hackathon challenge section */
 
 /* start footer section */
+.footer{
+    width:  100%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+
+    color: #fff;
+    background-color: rgb(2, 0, 35); 
+}
+.footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-around;
+    padding-top: 20px;
+
+    
+}
+.social-links{
+    display:flex;
+    align-items: center;
+    gap: 12px;
+}
+.social-links a{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+
+    display:grid;
+    place-items: center;
+    border: 1px solid #30374a;
+    border-radius: 50%;
+    color:#aeb6c8;
+    transition: 0.3s;
 
 
-
-
-/* end footer section */
+}
+.social-links a:hover{
+    color:#a855f7;
+    border-color: #a855f7;
+    transform: translateY(-3px);
+}
+.divider{
+    height:1px;
+    margin: 30px 0 20px;
+    background: #252b3d; 
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    
+}
+.copyright p{
+    margin: 0;
+    color: #56743f;
+    font-size: 0.85rem;
+}
